@@ -1,0 +1,46 @@
+.whySign{
+    width: 100%;
+    height:auto;
+}
+
+.whySign .container{
+    max-width: 1240px;
+    margin: auto;
+    overflow: hidden;
+    padding:0 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.header h1{
+    font-size: 42px;
+}
+
+
+.whySign .icons{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-gap:3rem;
+}
+
+.whySign .icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:2rem;
+}
+
+
+.whySign h3{
+    font-size: 24px;
+    color:black;
+}
+
+
+.whySign p{
+    font-size: 18px;
+    text-align: center;
+    color:black;
+}
+

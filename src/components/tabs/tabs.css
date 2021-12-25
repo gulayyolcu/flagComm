@@ -1,0 +1,53 @@
+.tabs{
+    width:100%;
+    margin:auto;
+    position: relative;
+    height:auto;
+  
+}
+
+.tabs .container{
+    max-width:1240px;
+    padding:3rem 1rem;
+    margin:auto;
+    overflow: hidden;
+    position:relative;
+    display: flex;
+    justify-content: center;
+
+ 
+   
+} 
+
+/* .flex{
+    display: flex;
+}
+
+.border-b{
+    border-bottom:2px solid lightblue;
+} */
+
+.tabs nav{
+     display: flex;
+    justify-content: space-between;
+     position:absolute;
+    top:1rem;
+
+}
+
+ul{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul  li{
+   
+   list-style: none;
+}
+
+.link{
+    text-decoration: none;
+    padding:0 1.5rem;
+}

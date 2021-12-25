@@ -1,0 +1,80 @@
+.flags{
+    width: 100%;
+    margin:3rem 0;
+}
+
+.container{
+    max-width:1240px;
+    margin:auto;
+    overflow:hidden;
+    padding:0 1rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.content-top{
+    
+    text-align: center;
+}
+
+.star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:1rem;
+}
+
+.content-bottom{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.sizeDiv{
+    width: 100%;
+    margin-right: 1rem;
+    padding: .4rem 0;
+}
+
+.size{
+    padding:.4rem;
+    width: 100%;
+    outline:none;
+    border:1px solid grey;
+    border-radius:4px;
+}
+
+.quantity{
+    display: block;
+    margin-right: 1rem;
+    padding: .4rem 0;
+}
+
+.quantity input{
+    width: 100%;
+    padding: .4rem;
+    outline:none;
+    border:1px solid grey;
+    border-radius:4px;
+}
+
+.flags-img{
+    display: flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+}
+
+.flags-img img{
+    margin:0;padding:0;
+}
+
+.form-layout{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;;
+    justify-content: center;
+    
+}

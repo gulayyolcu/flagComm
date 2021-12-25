@@ -1,0 +1,205 @@
+.accordion {
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: "Quicksand", sans-serif;
+    /* background: #009578; */
+    
+  }
+  
+  .accordion__label,
+  .accordion__content {
+    padding: 14px 20px;
+  }
+  
+  .accordion__label {
+    display: block;
+    color:black;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.1s;
+  }
+  
+  .accordion__label:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  .sizeDiv{
+    margin-left:1rem;
+    width:370px;
+  }
+
+  .quantity{
+    margin-left:1rem;
+    width:350px;
+  }
+  
+  .accordion__label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 12px;
+    height: 6px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+    background-size: contain;
+    transition: transform 0.4s;
+  }
+  
+  .accordion__content {
+    background: #ffffff;
+    line-height: 1.6;
+    font-size: 0.85em;
+    display: none;
+  }
+  
+  .accordion__input {
+    display: none;
+  }
+  
+  .accordion__input:checked ~ .accordion__content {
+    display: block;
+  }
+  
+  .accordion__input:checked ~ .accordion__label::after {
+    transform: translateY(-50%) rotate(0.5turn);
+  }
+
+
+  /*CUSTOM CHECKBOX*/
+
+  .main-container {
+   /*  height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .main-container h2 {
+    margin: 0 0 80px 0;
+    color: #8373e6;
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+  }
+
+  .radio-buttons {
+    width: 470px;
+    
+    display: flex;
+    align-items: center;
+
+    padding-right:10px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .custom-radio input {
+    display: none;
+  }
+
+  .radio-buttons.custom{
+    width:auto;
+    height:500px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+ 
+  } 
+
+
+  .accordion__content.last{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .accordion__content.last button{
+    background-color:#A2FF33;
+    color:#fff;
+    outline:none;
+    border:none;
+    font-weight: 600;
+    text-align: center;
+    width:auto;
+    padding:1rem 2rem;
+    font-size: 1.25rem;
+    border-radius: 6px;
+  }
+
+  .accordion__content.last p{
+    font-size: 1.25rem;
+    font-weight:600;
+    margin:0;
+    padding:0;
+  }
+
+  
+  .accordion__content.last .green{
+    color:#A2FF33;
+    margin:0;
+    padding:0;
+  }
+
+  .radio-btn {
+    margin: 5px;
+    width: 100px;
+    height: 200px;
+    border: 3px solid transparent;
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 20px #c3c3c367;
+    cursor: pointer;
+  }
+
+  .radio-btn > i {
+    color: #ffffff;
+    background-color: #8373e6;
+    font-size: 20px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%) scale(4);
+    border-radius: 50px;
+    padding: 3px;
+    transition: 0.2s;
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  .radio-btn .hobbies-icon {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .radio-btn .hobbies-icon i {
+    color: #8373e6;
+    line-height: 80px;
+    font-size: 60px;
+  }
+
+  .radio-btn .hobbies-icon h3 {
+    color: #8373e6;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .custom-radio input:checked + .radio-btn {
+    border: 3px solid #8373e6;
+  }
+
+  .custom-radio input:checked + .radio-btn > i {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+  }
+  
